@@ -1,2 +1,5 @@
 # FlyingBird
-qt飞鸟游戏
+
+qt制作飞鸟游戏
+
+

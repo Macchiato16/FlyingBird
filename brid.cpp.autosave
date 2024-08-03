@@ -1,0 +1,21 @@
+#include "brid.h"
+
+Brid::Brid(QObject *parent) : QObject(parent)
+{
+   //载入图片资源
+    m_bird.load("/iamge/Bird.png");
+    //初始化坐标
+   m_x=20;
+   m_y=100;
+   //初始化碰撞箱
+   crashBox.setWidth(55);
+   crashBox.setHeight(40);
+   crashBox.moveTo(m_x,m_y);
+   
+
+}
+void  Brid::updatePosition(int y)
+{
+    m_y=y;
+    crashBox.moveTo(m_x,m_y);
+}
